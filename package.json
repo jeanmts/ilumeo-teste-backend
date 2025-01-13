@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "migrate": "ts-node --require tsconfig-paths/register src/migrations/runMigration.ts",
     "start": "node dist/app.js",
     "dev": "nodemon",
     "lint": "eslint src --ext .ts"
@@ -33,6 +34,7 @@
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "knex": "^3.1.0",
     "pg": "^8.13.1"
   }
 }
